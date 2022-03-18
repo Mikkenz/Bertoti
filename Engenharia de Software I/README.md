@@ -25,4 +25,9 @@ Dentro dos requisitos não-funcionais, foi desenvolvido uma interface de simples
 
 <h4><p><b>:dart: Objetivo da Atividade:</b> Transformar os requisitos (tanto funcionais quanto não-funcionais) em algo que possa ser implementado.</h4>
 
+<p>:pushpin: Projeto Classes:
+  
+  ![relacao](https://user-images.githubusercontent.com/87658431/158987051-e61e8206-b72f-46ae-b3e8-c36c769dc1a0.jpeg)
+
+
 <h3>Projeto :construction_worker_woman:</h2>
