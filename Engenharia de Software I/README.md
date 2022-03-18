@@ -6,7 +6,11 @@
 
 <h3>:mag_right: Coletar os requisitos funcionais e não-funcionais do sistema</h3>
 
-<h4><p>:pushpin: Requisitos funcionais: são tarefas ou ações do sistema.</p>
+<h4><p>:pushpin: Requisitos funcionais: são tarefas ou ações do sistema.</p> 
+
+
+![requisitosFuncionais](https://user-images.githubusercontent.com/87658431/158985258-cf82b7ed-b4b3-4679-ba90-abf72fdc41ac.jpg)
+
 
 <p>:pushpin: Requisitos não-funcionais: são qualidades do sistema.</h4>
 
