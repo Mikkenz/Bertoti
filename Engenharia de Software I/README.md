@@ -14,6 +14,9 @@
 
 <p>:pushpin: Requisitos não-funcionais: são qualidades do sistema.</h4>
 
+![requisitosNaoFuncionais](https://user-images.githubusercontent.com/87658431/158985560-88262570-c6a0-40ca-964a-b7688923490e.png)
+
+
 • Os requisitos funcionais são de extrema importância no desenvolvimento de software, pois sem eles não há funcionalidades nos sistemas. Seus modelos devem ser construídos em um nível de entendimento claro e objetivo, além de um código fonte totalmente aplicável.<br>
 Como um requisito funcional específico, foi desenvolvido um Diagrama de Casos de Uso [:computer_mouse:](https://github.com/Mikkenz/Bertoti/blob/main/Engenharia%20de%20Software%20I/requisitosFuncionais.png)
   
