@@ -41,168 +41,155 @@ Dentro dos requisitos não-funcionais, foi desenvolvido uma interface de simples
 
 <div align="center">
   
-  <img src="Classe-Pessoa.png" alt="diagrama da classe Pessoa">
+  <img src="Pessoa.jpg" alt="diagrama da classe Pessoa">
 </div>
 <br>
 
     public class Pessoa {
 
-        private String nome;
-        private String matricula;
-        private String tipo;
-    
-        public Pessoa(String nome, String matricula, String tipo){
-            this.nome = nome;
-            this.matricula = matricula;
-            this.tipo = tipo;
-        }
-    
-        public String getNome(){
-            return nome;
-        }
-        
-        public void setNome(String novoNome){
-            this.nome = novoNome;
-        }
-        
-        public String getMatricula(){
-            return matricula;
-        }
-        
-        public void setMatricula(String novaMatricula){
-            this.matricula = novaMatricula;
-        }
-        
-        public String getTipo(){
-            return tipo;
-        }
-    
-        public void setTipo(String novoTipo){
-            this.tipo = novoTipo;
-        }
+    private String nome;
+    private String matricula;
+    private String tipo;
+
+    public Pessoa(String nome, String matricula, String tipo) {
+        this.nome = nome;
+        this.matricula = matricula;
+        this.tipo = tipo;
     }
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getMatricula() {
+        return matricula;
+    }
+
+    public void setMatricula(String matricula) {
+        this.matricula = matricula;
+    }
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+  }
+
 
 <br>
 <div align="center">
   
-  <img src="Classe-Disciplina.png" alt="diagrama da classe Disciplina">
+  <img src="Disciplina.jpg" alt="diagrama da classe Disciplina">
 </div>
 <br>
 
      public class Disciplina {
-        private String nomeDisciplina;
-        private String docente;
-        private String semestre;
 
-        public Disciplina(String nomeDisciplina, String docente, String semestre) {
-            this.nomeDisciplina = nomeDisciplina;
-            this.docente = docente;
-            this.semestre = semestre;
-        }
+    private String nome;
+    private String docente;
 
-        public String getNomeDisciplina() {
-            return nomeDisciplina;
-        }
-        
-        public void setNomeDisciplina(String novoNomeDisciplina) {
-            this.nomeDisciplina = novoNomeDisciplina;
-        }
-
-        public String getDocente() {
-            return docente;
-        }
-        
-        public void setDocente(String novoDocente) {
-            this.docente = novoDocente;
-        }
-
-        public String getSemestre() {
-            return semestre;
-        }
-        
-        public void setSemestre(String novoSemestre) {
-            this.semestre = novoSemestre;
-        }
+    public Disciplina(String nome, String docente) {
+        this.nome = nome;
+        this.docente = docente;
     }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getDocente() {
+        return docente;
+    }
+
+    public void setDocente(String docente) {
+        this.docente = docente;
+    }
+}
+
+
+
 
 <br>
 <div align="center">
   
-  <img src="Classe-Plataforma.png" alt="diagrama da classe Plataforma de Ensino">
+  <img src="Plataforma.jpg" alt="diagrama da classe Plataforma de Ensino">
 </div>
 <br>
 
 
     import java.util.LinkedList;
-    import java.util.List;
+import java.util.List;
 
-    public class PlataformaDeEnsino {
-        private List<Pessoa> pessoas = new LinkedList<Pessoa>();    
-        private List<Disciplina> disciplinas = new LinkedList<Disciplina>();
-    
-        public void cadastrarPessoa(Pessoa pessoa){
-            pessoas.add(pessoa);
-        }
-    
-        public Pessoa buscarPessoaPorNome(String nome){
-            for(Pessoa pessoa:pessoas){
-                if(pessoa.getNome().equals(nome)){
-                    return pessoa;
-                }
-            }
-            return null;
-        }
-    
-        public Pessoa buscarPessoaPorMatricula(String matricula){
-            for(Pessoa pessoa:pessoas){
-                if(pessoa.getMatricula().equals(matricula)){
-                    return pessoa;
-                }
-            }
-            return null;
-        }
-    
-        public Pessoa buscarPessoaPorTipo(String tipo){
-            for(Pessoa pessoa:pessoas){
-                if(pessoa.getTipo().equals(tipo)){
-                    return pessoa;
-                }
-            }
-            return null;
-        }
-    
-        public void cadastrarDisciplina(Disciplina disciplina){
-            disciplinas.add(disciplina);
-        }
-    
-        public Disciplina buscarDisciplinaPorNome(String nome){
-            for(Disciplina disciplina:disciplinas){
-                if(disciplina.getNomeDisciplina().equals(nome)){
-                    return disciplina;
-                }
-            }
-            return null;
-        }
-    
-        public Disciplina buscarDisciplinaPorDocente(String docente){
-            for(Disciplina disciplina:disciplinas){
-                if(disciplina.getDocente().equals(docente)){
-                   return disciplina;
-                }
-            }
-            return null;
-        }
-    
-        public Disciplina buscarDisciplinaPorSemestre(String semestre){
-            for(Disciplina disciplina:disciplinas){
-                if(disciplina.getSemestre().equals(semestre)){
-                    return disciplina;
-                }
-            }
-            return null;
-        }
-    
+public class Plataforma {
+
+    private List<Pessoa> pessoas = new LinkedList<Pessoa>();
+    private List<Disciplina> disciplinas = new LinkedList<Disciplina>();
+
+    public void cadastrarPessoa(Pessoa pessoa){
+        pessoas.add(pessoa);
     }
+
+    public Pessoa buscarPessoaNome(String nome){
+        for(Pessoa pessoa:pessoas){
+            if(pessoa.getNome().equals(nome)){
+                return pessoa;
+            }
+        }
+        return null;
+    }
+
+    public Pessoa buscarPessoaMatricula(String matricula){
+        for(Pessoa pessoa:pessoas){
+            if(pessoa.getMatricula().equals(matricula)){
+                return pessoa;
+            }
+        }
+        return null;
+    }
+
+    public Pessoa buscarPessoaTipo(String tipo){
+        for(Pessoa pessoa:pessoas){
+            if(pessoa.getTipo().equals(tipo)){
+                return pessoa;
+            }
+        }
+        return null;
+    }
+
+    public void cadastrarDisciplina(Disciplina disciplina){
+        disciplinas.add(disciplina);
+    }
+
+    public Disciplina buscarDisciplinaNome(String nome){
+        for(Disciplina disciplina:disciplinas){
+            if(disciplina.getNome().equals(nome)){
+                return disciplina;
+            }
+        }
+        return null;
+    }
+
+    public Disciplina buscarDisciplinaDocente(String docente){
+        for(Disciplina disciplina:disciplinas){
+            if(disciplina.getDocente().equals(docente)){
+                return disciplina;
+            }
+        }
+        return null;
+    }
+
+}
+
 <br>
 
 <div id="#dev">
