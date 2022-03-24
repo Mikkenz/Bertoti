@@ -31,3 +31,178 @@ Dentro dos requisitos não-funcionais, foi desenvolvido uma interface de simples
 
 
 <h3>Projeto :construction_worker_woman:</h2>
+
+
+  ## 💻Desenvolvimento
+  
+<p>Nessa etapa foi usada a linguagem Java para codificar cada uma das classes criadas na etapa anterior.</p>
+  
+</div>
+
+<div align="center">
+  
+  <img src="Classe-Pessoa.png" alt="diagrama da classe Pessoa">
+</div>
+<br>
+
+    public class Pessoa {
+
+        private String nome;
+        private String matricula;
+        private String tipo;
+    
+        public Pessoa(String nome, String matricula, String tipo){
+            this.nome = nome;
+            this.matricula = matricula;
+            this.tipo = tipo;
+        }
+    
+        public String getNome(){
+            return nome;
+        }
+        
+        public void setNome(String novoNome){
+            this.nome = novoNome;
+        }
+        
+        public String getMatricula(){
+            return matricula;
+        }
+        
+        public void setMatricula(String novaMatricula){
+            this.matricula = novaMatricula;
+        }
+        
+        public String getTipo(){
+            return tipo;
+        }
+    
+        public void setTipo(String novoTipo){
+            this.tipo = novoTipo;
+        }
+    }
+
+<br>
+<div align="center">
+  
+  <img src="Classe-Disciplina.png" alt="diagrama da classe Disciplina">
+</div>
+<br>
+
+     public class Disciplina {
+        private String nomeDisciplina;
+        private String docente;
+        private String semestre;
+
+        public Disciplina(String nomeDisciplina, String docente, String semestre) {
+            this.nomeDisciplina = nomeDisciplina;
+            this.docente = docente;
+            this.semestre = semestre;
+        }
+
+        public String getNomeDisciplina() {
+            return nomeDisciplina;
+        }
+        
+        public void setNomeDisciplina(String novoNomeDisciplina) {
+            this.nomeDisciplina = novoNomeDisciplina;
+        }
+
+        public String getDocente() {
+            return docente;
+        }
+        
+        public void setDocente(String novoDocente) {
+            this.docente = novoDocente;
+        }
+
+        public String getSemestre() {
+            return semestre;
+        }
+        
+        public void setSemestre(String novoSemestre) {
+            this.semestre = novoSemestre;
+        }
+    }
+
+<br>
+<div align="center">
+  
+  <img src="Classe-Plataforma.png" alt="diagrama da classe Plataforma de Ensino">
+</div>
+<br>
+
+
+    import java.util.LinkedList;
+    import java.util.List;
+
+    public class PlataformaDeEnsino {
+        private List<Pessoa> pessoas = new LinkedList<Pessoa>();    
+        private List<Disciplina> disciplinas = new LinkedList<Disciplina>();
+    
+        public void cadastrarPessoa(Pessoa pessoa){
+            pessoas.add(pessoa);
+        }
+    
+        public Pessoa buscarPessoaPorNome(String nome){
+            for(Pessoa pessoa:pessoas){
+                if(pessoa.getNome().equals(nome)){
+                    return pessoa;
+                }
+            }
+            return null;
+        }
+    
+        public Pessoa buscarPessoaPorMatricula(String matricula){
+            for(Pessoa pessoa:pessoas){
+                if(pessoa.getMatricula().equals(matricula)){
+                    return pessoa;
+                }
+            }
+            return null;
+        }
+    
+        public Pessoa buscarPessoaPorTipo(String tipo){
+            for(Pessoa pessoa:pessoas){
+                if(pessoa.getTipo().equals(tipo)){
+                    return pessoa;
+                }
+            }
+            return null;
+        }
+    
+        public void cadastrarDisciplina(Disciplina disciplina){
+            disciplinas.add(disciplina);
+        }
+    
+        public Disciplina buscarDisciplinaPorNome(String nome){
+            for(Disciplina disciplina:disciplinas){
+                if(disciplina.getNomeDisciplina().equals(nome)){
+                    return disciplina;
+                }
+            }
+            return null;
+        }
+    
+        public Disciplina buscarDisciplinaPorDocente(String docente){
+            for(Disciplina disciplina:disciplinas){
+                if(disciplina.getDocente().equals(docente)){
+                   return disciplina;
+                }
+            }
+            return null;
+        }
+    
+        public Disciplina buscarDisciplinaPorSemestre(String semestre){
+            for(Disciplina disciplina:disciplinas){
+                if(disciplina.getSemestre().equals(semestre)){
+                    return disciplina;
+                }
+            }
+            return null;
+        }
+    
+    }
+<br>
+
+<div id="#dev">
