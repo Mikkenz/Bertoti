@@ -85,7 +85,7 @@ Dentro dos requisitos não-funcionais, foi desenvolvido uma interface de simples
 <br>
 <div align="center">
   
-  <img src="Disciplina.jpg" alt="diagrama da classe Disciplina">
+  <img src="Disciplinas.jpg" alt="diagrama da classe Disciplina">
 </div>
 <br>
 
