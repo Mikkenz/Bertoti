@@ -10,7 +10,7 @@
     O sistema deve mostrar o que está acontecendo em tempo real pro usuário, um exemplo disso é a interface das playlists Youtube, que ficam ao lado direito do vídeo, mostrando qual vídeo da lista estamos assistindo, qual os próximos e quais já foram assistidos
 
   <div align="center">
-    <img alt="Captura da tela do youtube mostrando a playlist" src="https://github.com/Mikkenz/Bertoti/blob/main/IHC/Heuristica.png">
+    <img alt="Captura da tela do youtube mostrando a playlist" src="https://github.com/Mikkenz/Bertoti/blob/main/IHC/Heuristica/Heuristica.png">
   </div>
 
 
@@ -43,7 +43,7 @@
     <br>
 
   <div align="center">
-    <img alt="Captura de tela de site com muitas cores, elementos piscando, rodando, entre outros exageros" src="https://github.com/Mikkenz/Bertoti/blob/main/IHC/dokimos.png">
+    <img alt="Captura de tela de site com muitas cores, elementos piscando, rodando, entre outros exageros" src="https://github.com/Mikkenz/Bertoti/blob/main/IHC/Heuristicas/dokimos.png">
   </div>
 
 > **Observações:** muitas cores misturadas, não colaborando para uma harmonia visual; texto ilegível por conta do baixo contraste entre o background e a cor do texto, além de não utilizar uma fonte simples e de fácil legibilidade; elementos piscando e se mexendo em todos os cantos da tela, podendo representar certo risco de convulsão
