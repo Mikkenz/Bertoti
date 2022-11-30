@@ -10,7 +10,7 @@
     O sistema deve mostrar o que está acontecendo em tempo real pro usuário, um exemplo disso é a interface das playlists Youtube, que ficam ao lado direito do vídeo, mostrando qual vídeo da lista estamos assistindo, qual os próximos e quais já foram assistidos
 
   <div align="center">
-    <img alt="Captura da tela do youtube mostrando a playlist" src="https://github.com/Mikkenz/Bertoti/blob/main/IHC/Heuristica/Heuristica.png">
+    <img alt="Captura da tela do youtube mostrando a playlist" src="https://github.com/Mikkenz/Bertoti/blob/main/IHC/Heuristicas/Heuristica.png">
   </div>
 
 
